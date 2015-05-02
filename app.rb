@@ -11,12 +11,16 @@ Cuba.define do
   on "order" do
     on "created" do
       puts req.params
+      res.status = 200
+      res.write "hello"
     end
   end
   
   on "cart" do
     on "created" do
       puts req.params
+      res.status = 200
+      res.write "hello"
     end
   end
 
