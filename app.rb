@@ -10,15 +10,13 @@ Cuba.define do
 
   on "order" do
     on "created" do
-      puts req.params
-      res.write "Hello world!"
+      res.write req.params
     end
   end
   
   on "cart" do
     on "created" do
-      puts req.params
-      res.write "Hello world!"
+      res.write req.params
     end
   end
 
